@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #dc3545;
+    --accent-color: #6091eb;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+.navbar{
+    margin-bottom: 10px;
+    background-color: var(--accent-color) !important;
+    font-weight: 600;
+}
+
+.navbar ul li a {
+    color:rgb(193, 216, 236);
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.search-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.clear-btn{
+    padding: 8px 16px;
+    border-radius: 5px;
+}
