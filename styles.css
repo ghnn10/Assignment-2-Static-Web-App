@@ -31,6 +31,10 @@ body {
     color: black;
 }
 
+main{
+    padding: 0 50px 0 50px;
+}
+
 .search-container{
     display: flex;
     flex-wrap: wrap;
@@ -48,4 +52,42 @@ body {
 .clear-btn{
     padding: 8px 16px;
     border-radius: 5px;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+  .clear-btn {
+    flex: 1 1 100%;
+    width: 100%; 
+  }
+}
+
+.custom-fit {
+  height: 250px; /* Adjust this to make the image taller or shorter */
+  width: 100%;
+  object-fit: cover; /* Prevents the image from squishing */
+}
+
+.btn-custom {
+  background-color: #b3cce7; 
+  color:#6091eb;
+}
+
+.btn-custom:hover{
+    background-color: rgb(214, 52, 79);
+    color: #000000;
+}
+
+
+
+#charactersCard:hover{
+    transform: scale(1.05);
+    box-shadow:  rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color:#6091eb;
+    width: 100%;
+    bottom: 0;
 }
