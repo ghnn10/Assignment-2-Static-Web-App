@@ -1,6 +1,6 @@
 :root {
     --primary-color: #000000;
-    --secondary-color: #dc3545;
+    --secondary-color: rgb(193, 216, 236);
     --accent-color: #6091eb;
 }
 
@@ -31,8 +31,21 @@ body {
     color: black;
 }
 
-main{
-    padding: 0 50px 0 50px;
+#navbarNav{
+    margin-right: 0;
+    justify-content: end;
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+.container-fluid{
+    margin: 0 10px;
+}
+
+.page-header h1{
+    font-weight: bolder;
 }
 
 .search-container{
@@ -40,6 +53,10 @@ main{
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+}
+
+#filterBox:hover{
+    box-shadow: 2px 2px 2px 2px #e8eaec;
 }
 
 .search-bar{
@@ -70,8 +87,9 @@ main{
 }
 
 .btn-custom {
-  background-color: #b3cce7; 
+  background-color: var(--secondary-color);
   color:#6091eb;
+  margin-top: auto;
 }
 
 .btn-custom:hover{
@@ -80,14 +98,23 @@ main{
 }
 
 
-
 #charactersCard:hover{
     transform: scale(1.05);
-    box-shadow:  rgba(0, 0, 0, 0.2);
+    box-shadow:  rgba(0, 0, 0, 0.3);
+}
+
+.badge{
+    background-color: #6091eb;
+    color: white;
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 10px;
 }
 
 footer{
     background-color:#6091eb;
     width: 100%;
     bottom: 0;
+    color: var(--secondary-color);
 }
